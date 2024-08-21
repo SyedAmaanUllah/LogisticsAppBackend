@@ -1,0 +1,18 @@
+# Ignore the build results
+/bin/
+/obj/
+
+# Ignore user-specific files
+*.user
+*.suo
+*.sln.ide
+
+# Ignore IDE-specific files
+.vscode/
+.idea/
+
+# Ignore NuGet packages
+*.nupkg
+*.snupkg
+*.nuspec
+.vs
