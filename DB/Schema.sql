@@ -1,0 +1,109 @@
+﻿DROP DATABASE IF EXISTS LogisticsDB;
+CREATE DATABASE LogisticsDB;
+GO
+USE LogisticsDB;
+GO
+
+
+CREATE TABLE Customers (
+	CustomerId INT PRIMARY KEY IDENTITY(1,1),
+	Name NVARCHAR(50) NOT NULL,
+	Email NVARCHAR(100),
+	Phone NVARCHAR(20),
+	Address NVARCHAR(255),
+	City NVARCHAR(50),
+	Country NVARCHAR(50),
+	CreatedDate DATETIME DEFAULT GETDATE(),
+	ModifiedDate DATETIME DEFAULT GETDATE()
+);
+Go
+
+
+CREATE TABLE Roles (
+	RoleId INT PRIMARY KEY IDENTITY(1,1),
+	RoleName NVARCHAR(50),
+	CreatedDate DATETIME DEFAULT GETDATE(),
+	ModifiedDate DATETIME DEFAULT GETDATE()
+);
+Go
+
+CREATE TABLE Users (
+	UserId INT PRIMARY KEY IDENTITY(1,1),
+	UserName NVARCHAR(50) NOT NULL,
+	PasswordHash NVARCHAR(255) NOT NULL,
+	Email NVARCHAR(100) NOT NULL UNIQUE,
+	RoleId INT NOT NULL,
+	CreatedDate DATETIME DEFAULT GETDATE(),
+	ModifiedDate DATETIME DEFAULT GETDATE(),
+	IsActivate BIT NOT NULL,
+	FOREIGN KEY (RoleId) References Roles(RoleId)
+);
+Go
+
+CREATE TABLE Airports (
+	AirportId INT PRIMARY KEY IDENTITY(1,1),
+	AirportCode NVARCHAR(10) NOT NULL,
+	Name NVARCHAR(50) NOT NULL,
+	Location NVARCHAR(100),
+	Country NVARCHAR(50),
+	Facilities NVARCHAR(MAX),
+	CreatedDate DATETIME DEFAULT GETDATE(),
+	ModifiedDate DATETIME DEFAULT GETDATE()
+);
+Go
+
+CREATE TABLE Flights (
+	FlightId INT PRIMARY KEY IDENTITY(1,1),
+	FlightNumber NVARCHAR(20) NOT NULL,
+	AirlineCode NVARCHAR(10) NOT NULL,
+	AirlineName NVARCHAR(100) NOT NULL,
+	DepartureAirportId INT NOT NULL,
+	ArrivalAirportId INT NOT NULL,
+	DepartureTime DATETIME NOT NULL,
+	ArrivalTime DATETIME NOT NULL,
+	Status NVARCHAR(5) NOT NULL,
+	CargoCapacity DECIMAL(10,2) NOT NULL,
+	CreatedDate DATETIME DEFAULT GETDATE(),
+	ModifiedDate DATETIME DEFAULT GETDATE(),
+	FOREIGN KEY (DepartureAirportId) REFERENCES Airports(AirportId),
+	FOREIGN KEY (ArrivalAirportId) REFERENCES Airports(AirportId),
+);
+Go
+
+CREATE TABLE ShipmentStatus (
+	StatusId INT PRIMARY KEY IDENTITY(1,1),
+	StatusName NVARCHAR(50) NOT NULL,
+	Description NVARCHAR(255)
+);
+Go
+
+CREATE TABLE Shipments(
+	ShipmentId INT PRIMARY KEY IDENTITY(1,1),
+	ShipmentCode NVARCHAR(50) NOT NULL,
+	Description NVARCHAR(255),
+	OriginAirportId INT NOT NULL,
+	DestinationAirportId INT NOT NULL,
+	CustomerId INT NOT NULL,
+	FlightId INT NOT NULL,
+	StatusId INT NOT NULL,
+	ShipmentDate DATETIME NOT NULL,
+	CreatedDate DATETIME DEFAULT GETDATE(),
+	ModifiedDate DATETIME DEFAULT GETDATE(),
+	FOREIGN KEY (OriginAirportId) REFERENCES Airports(AirportId),
+	FOREIGN KEY (DestinationAirportId) REFERENCES Airports(AirportId),
+	FOREIGN KEY (CustomerId) REFERENCES Customers(CustomerId),
+	FOREIGN KEY (FlightId) REFERENCES Flights(FlightId),
+	FOREIGN KEY (StatusId) REFERENCES ShipmentStatus(StatusId)
+);
+Go
+
+CREATE TRIGGER trg_UpdateModifiedDate
+ON Shipments
+AFTER UPDATE
+AS
+BEGIN
+	UPDATE Shipments
+	SET ModifiedDate = GETDATE()
+	WHERE ShipmentId IN (SELECT ShipmentId FROM inserted);
+END
+Go

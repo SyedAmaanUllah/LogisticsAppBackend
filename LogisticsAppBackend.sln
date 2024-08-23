@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LogisticsAPI", "LogisticsAPI\LogisticsAPI.csproj", "{65C406AA-BA42-49C3-938F-6025AD162921}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LogisticsAPI", "LogisticsAPI\LogisticsAPI.csproj", "{65C406AA-BA42-49C3-938F-6025AD162921}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Logistics.DAL", "Logistics.DAL\Logistics.DAL.csproj", "{564A774C-5923-4A91-8E3B-C67E9973D4C2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LogisticsBLL", "LogisticsBLL\LogisticsBLL.csproj", "{A08DB712-BDA2-4CAC-8FE3-1452C37907DB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LogisticsBLL", "LogisticsBLL\LogisticsBLL.csproj", "{A08DB712-BDA2-4CAC-8FE3-1452C37907DB}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LogisticsDAL", "LogisticsDAL\LogisticsDAL.csproj", "{F7AADD5B-4EDC-4FD6-8B87-D842646EB134}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -19,14 +19,14 @@ Global
 		{65C406AA-BA42-49C3-938F-6025AD162921}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{65C406AA-BA42-49C3-938F-6025AD162921}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{65C406AA-BA42-49C3-938F-6025AD162921}.Release|Any CPU.Build.0 = Release|Any CPU
-		{564A774C-5923-4A91-8E3B-C67E9973D4C2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{564A774C-5923-4A91-8E3B-C67E9973D4C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{564A774C-5923-4A91-8E3B-C67E9973D4C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{564A774C-5923-4A91-8E3B-C67E9973D4C2}.Release|Any CPU.Build.0 = Release|Any CPU
 		{A08DB712-BDA2-4CAC-8FE3-1452C37907DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{A08DB712-BDA2-4CAC-8FE3-1452C37907DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A08DB712-BDA2-4CAC-8FE3-1452C37907DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A08DB712-BDA2-4CAC-8FE3-1452C37907DB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F7AADD5B-4EDC-4FD6-8B87-D842646EB134}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F7AADD5B-4EDC-4FD6-8B87-D842646EB134}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F7AADD5B-4EDC-4FD6-8B87-D842646EB134}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F7AADD5B-4EDC-4FD6-8B87-D842646EB134}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

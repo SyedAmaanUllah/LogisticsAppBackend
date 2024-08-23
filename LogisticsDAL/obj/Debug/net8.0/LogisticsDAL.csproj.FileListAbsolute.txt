@@ -1,0 +1,15 @@
+C:\Users\52420591\Videos\.NET Fullstack Development\MyWork\LogisticsManagementSystem\LogisticsAppBackend\LogisticsDAL\bin\Debug\net8.0\LogisticsDAL.deps.json
+C:\Users\52420591\Videos\.NET Fullstack Development\MyWork\LogisticsManagementSystem\LogisticsAppBackend\LogisticsDAL\bin\Debug\net8.0\LogisticsDAL.runtimeconfig.json
+C:\Users\52420591\Videos\.NET Fullstack Development\MyWork\LogisticsManagementSystem\LogisticsAppBackend\LogisticsDAL\bin\Debug\net8.0\LogisticsDAL.dll
+C:\Users\52420591\Videos\.NET Fullstack Development\MyWork\LogisticsManagementSystem\LogisticsAppBackend\LogisticsDAL\bin\Debug\net8.0\LogisticsDAL.pdb
+C:\Users\52420591\Videos\.NET Fullstack Development\MyWork\LogisticsManagementSystem\LogisticsAppBackend\LogisticsDAL\obj\Debug\net8.0\LogisticsDAL.csproj.AssemblyReference.cache
+C:\Users\52420591\Videos\.NET Fullstack Development\MyWork\LogisticsManagementSystem\LogisticsAppBackend\LogisticsDAL\obj\Debug\net8.0\LogisticsDAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\52420591\Videos\.NET Fullstack Development\MyWork\LogisticsManagementSystem\LogisticsAppBackend\LogisticsDAL\obj\Debug\net8.0\LogisticsDAL.AssemblyInfoInputs.cache
+C:\Users\52420591\Videos\.NET Fullstack Development\MyWork\LogisticsManagementSystem\LogisticsAppBackend\LogisticsDAL\obj\Debug\net8.0\LogisticsDAL.AssemblyInfo.cs
+C:\Users\52420591\Videos\.NET Fullstack Development\MyWork\LogisticsManagementSystem\LogisticsAppBackend\LogisticsDAL\obj\Debug\net8.0\LogisticsDAL.csproj.CoreCompileInputs.cache
+C:\Users\52420591\Videos\.NET Fullstack Development\MyWork\LogisticsManagementSystem\LogisticsAppBackend\LogisticsDAL\obj\Debug\net8.0\LogisticsDAL.sourcelink.json
+C:\Users\52420591\Videos\.NET Fullstack Development\MyWork\LogisticsManagementSystem\LogisticsAppBackend\LogisticsDAL\obj\Debug\net8.0\LogisticsDAL.dll
+C:\Users\52420591\Videos\.NET Fullstack Development\MyWork\LogisticsManagementSystem\LogisticsAppBackend\LogisticsDAL\obj\Debug\net8.0\refint\LogisticsDAL.dll
+C:\Users\52420591\Videos\.NET Fullstack Development\MyWork\LogisticsManagementSystem\LogisticsAppBackend\LogisticsDAL\obj\Debug\net8.0\LogisticsDAL.pdb
+C:\Users\52420591\Videos\.NET Fullstack Development\MyWork\LogisticsManagementSystem\LogisticsAppBackend\LogisticsDAL\obj\Debug\net8.0\LogisticsDAL.genruntimeconfig.cache
+C:\Users\52420591\Videos\.NET Fullstack Development\MyWork\LogisticsManagementSystem\LogisticsAppBackend\LogisticsDAL\obj\Debug\net8.0\ref\LogisticsDAL.dll
