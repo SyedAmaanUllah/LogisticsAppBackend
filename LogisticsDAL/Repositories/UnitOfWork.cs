@@ -6,11 +6,11 @@ namespace LogisticsDAL.Repositories
     public class UnitOfWork : IUnitOfWork
     {
         private readonly LogisticsDbContext _dbContext;
-        private readonly ILogger _logger;
-        public UnitOfWork(LogisticsDbContext dbContext, ILogger logger)
+        private readonly ILogger<UnitOfWork> _logger;
+        public UnitOfWork(LogisticsDbContext dbContext, ILogger<UnitOfWork> logger)
         {
             _dbContext = dbContext;
-            Shipments = new Repository<Shipment>(_dbContext);
+            Shipments = new ShipmentRepository(_dbContext);
             Customers = new Repository<Customer>(_dbContext);
             Airports = new Repository<Airport>(_dbContext);
             Users = new Repository<User>(_dbContext);
@@ -19,7 +19,7 @@ namespace LogisticsDAL.Repositories
             _logger = logger;
         }
 
-        public IRepository<Shipment> Shipments { get; }
+        public IShipmentRepository Shipments { get; }
 
         public IRepository<Customer> Customers { get; }
 
@@ -40,7 +40,7 @@ namespace LogisticsDAL.Repositories
             catch (Exception ex) 
             {
                 _logger.LogError(ex, "An error occurred while saving changes to the database.");
-                throw new Exception("An error occurred while saving changes", ex);
+                return -1;
             }
         }
 

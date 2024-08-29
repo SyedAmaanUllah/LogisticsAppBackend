@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("LogisticsDAL")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b63afbe3e718b773bf5e6fe965b0c9fbf4f43b77")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bde21cccfd89e1161ec72500e0fbde0220dfb66f")]
 [assembly: System.Reflection.AssemblyProductAttribute("LogisticsDAL")]
 [assembly: System.Reflection.AssemblyTitleAttribute("LogisticsDAL")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

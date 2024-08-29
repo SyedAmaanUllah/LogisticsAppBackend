@@ -1,4 +1,5 @@
-﻿using System;
+﻿using LogisticsDAL.Models;
+using System;
 using System.ComponentModel.DataAnnotations;
 
 public class ShipmentDTO
@@ -34,4 +35,9 @@ public class ShipmentDTO
     public DateTime? CreatedDate { get; set; }
 
     public DateTime? ModifiedDate { get; set; }
+    public string? OriginAirportName { get; set; }
+    public string? DestinationAirportName { get; set; }
+    public string? CustomerName { get; set; }
+    public string? FlightNumber { get; set; }
+    public string? StatusName { get; set; }
 }

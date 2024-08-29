@@ -1,4 +1,6 @@
 
+using LogisticsBLL;
+using LogisticsBLL.Services;
 using LogisticsDAL;
 using LogisticsDAL.Repositories;
 using Microsoft.EntityFrameworkCore;
@@ -19,6 +21,7 @@ builder.Services.AddCors(options =>
 builder.Services.AddDbContext<LogisticsDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")?.ToString()));
 builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
+builder.Services.AddScoped<IShipmentService,ShipmentService>();
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle

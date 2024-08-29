@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("LogisticsAPI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+59b616904933da29a6cae801e5039c029368dabc")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bde21cccfd89e1161ec72500e0fbde0220dfb66f")]
 [assembly: System.Reflection.AssemblyProductAttribute("LogisticsAPI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("LogisticsAPI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

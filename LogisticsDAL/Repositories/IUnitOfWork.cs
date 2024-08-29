@@ -9,7 +9,7 @@ namespace LogisticsDAL.Repositories
 {
     public interface IUnitOfWork
     {
-        IRepository<Shipment> Shipments { get; }
+        IShipmentRepository Shipments { get; }
         IRepository<Customer> Customers { get; }
         IRepository<Airport> Airports { get; }
         IRepository<User> Users { get; }
